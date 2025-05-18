@@ -12,23 +12,19 @@
     <script src="./index.js"></script>
     <script src="//unpkg.com/alpinejs" defer></script>
 </head>
-<header>
-    <div class="w-full fixed z-50">
-        <nav class="text-cool_cyan-300 bg-cool_gray-300 pt-1 pb-0">
-                <img class="h-10 inline px-3" src="./images/logo.png" href="#" alt="gnarbear logo">
-                <!-- <a src="./images/logo.png" id="logo" class="text-3xl px-3 bg-cool_gray-300" href="#">logo -->
-                    <!-- Work-around for logo which is just an snapshot of the svg until I can figure out how to remove large borders created in nav header -->
-                    <!-- SVG for gnarbear logo text with ɓ for b and g -->
-                    <!-- <p xmlns="http://www.w3.org/2000/svg" style="cursor: text; transform: rotate(180deg) translateY(-10px) translateX(-1px);" transform="rotate(-180 363.4 198)" stroke="#000" xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_1" y="206.4" x="357.39999" stroke-width="0" fill="#84D3DB">ɓ</p>
-                    <p>narɓear</p> -->
-                <!-- </a> -->
+    <header>
+        <div class="w-full fixed z-50">
+            <nav class="text-cool_cyan-300 bg-cool_gray-300 pt-1 pb-2">
+                <a id="logo" class="text-3xl px-3 bg-cool_gray-300" href="#">
+                    gnarbear
+                </a>
                 <button id="menuBurger" type="button" class="sm:hidden float-end mt-2 px-3 focus:outline-none">
                     <svg class="size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                         <path id="menuBurgerOpen" stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                         <path id="menuBurgerClose" hidden stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                     </svg>
                 </button>
-                <button class="float-end mt-2 px-3 focus:outline-none">
+                <button class="float-end mt-3 px-3 focus:outline-none">
                     <svg id="moonIcon" class="size-5"xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
                     </svg>
@@ -93,13 +89,13 @@
         <h1 class="text-3xl px-20 pt-5 text-center mt-10">
             Contact
         </h1>
-        <p class="py-4 px-20 text-center svg">
+        <p class="py-4 px-20 text-center">
             For booking requests, email me at <span class="text-cool_cyan-500">bookme@gnarbearmusic.com</span>
             <img class="cursor-pointer inline" id="copy-el" src="./images/copyicon.png" alt="copy icon">
         </p>
     </body>
-    <footer id="footer" class="text-center pt-20 text-xs cursors">
-        <p class="svg" id="site-promo">site designed by gnarbear 🐻</p>
+    <footer id="footer" class="text-center pt-20 text-xs">
+        <p id="site-promo">site designed by gnarbear 🐻</p>
     </footer>
     </html>
     
