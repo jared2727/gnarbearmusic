@@ -102,3 +102,34 @@ body {
     justify-content: center;
     margin: 3%;
 }
+
+.svg {
+  cursor: url(images/deer-svgrepo-com.svg), auto;
+}
+
+.cursors {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  height: 100vh;
+}
+
+.cursors > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  box-sizing: border-box;
+  padding: 10px 2px;
+  text-align: center;  
+  &:nth-child(odd) {
+    background: #eee;     
+   }
+  &:hover {
+    opacity: 0.25
+  }
+}
+
+#b-flip {
+  color: black;
+}
