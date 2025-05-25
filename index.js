@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const menuCloseIcon = document.querySelector("#menuBurgerClose"); // Renamed for clarity
     const moonIcon = document.querySelector("#moonIcon");
     const bodyElement = document.querySelector("body"); // Select body once
-    const homeLogo = document.querySelector("#logo");
+    const homeLogo = document.querySelector("#logo-div");
     const copyIcon = document.querySelector("#copy-el");
     const linkTextEl = document.querySelectorAll("#link-text");
 
