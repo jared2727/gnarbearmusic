@@ -10,39 +10,44 @@
     <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     <title>gnarbearmusic</title>
     <script src="./index.js"></script>
-    <script src="//unpkg.com/alpinejs" defer></script>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=content_copy" />
 </head>
 <header>
     <div class="w-full fixed z-50">
-        <nav class="text-cool_cyan-300 bg-cool_gray-300 pt-1 pb-1">
-                <img id="logo" class="h-10 inline px-3" src="./images/logo.png" href="#" alt="gnarbear logo">
-                <!-- <a src="./images/logo.png" id="logo" class="text-3xl px-3 bg-cool_gray-300" href="#">logo -->
+        <nav class=" flex justify-between text-cool_cyan-300 bg-cool_gray-500 pt-1 pb-3">
+                <!-- <img id="logo" class="h-10 inline px-3" src="./images/logo.png" href="#" alt="gnarbear logo"> -->
+                <!-- <a src="./images/logo.png" id="logo" class="text-3xl px-3 bg-cool_gray-500" href="#">logo -->
                     <!-- Work-around for logo which is just an snapshot of the svg until I can figure out how to remove large borders created in nav header -->
                     <!-- SVG for gnarbear logo text with ɓ for b and g -->
-                    <!-- <p xmlns="http://www.w3.org/2000/svg" style="cursor: text; transform: rotate(180deg) translateY(-10px) translateX(-1px);" transform="rotate(-180 363.4 198)" stroke="#000" xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" id="svg_1" y="206.4" x="357.39999" stroke-width="0" fill="#84D3DB">ɓ</p>
-                    <p>narɓear</p> -->
-                <!-- </a> -->
-                <button id="menuBurger" type="button" class="sm:hidden float-end mt-2 px-3 focus:outline-none">
-                    <svg class="size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path id="menuBurgerOpen" stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                        <path id="menuBurgerClose" hidden stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                    </svg>
-                </button>
-                <button class="float-end mt-2 px-3 focus:outline-none">
-                    <svg id="moonIcon" class="size-5"xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
-                    </svg>
-                </button>
-                <div id="scroll-progress" class="bg-cool_cyan-300 h-0.5 fixed top-0 left-0 z-50"></div>
-                <div id="mobileMenu" class="bg-cool_gray-300 fixed px-1 pt-1 pb-3 w-full sm:p-0 top-[-120px] duration-300 -z-10 sm:hidden">
-                    <a href="#about" class="block hover:bg-cool_gray-500 text-cool_cyan-300 rounded px-2 py-1 sm:ml-4 scroll-smooth">About Me</a>
-                    <a href="#music" class="block hover:bg-cool_gray-500 text-cool_cyan-300 rounded px-2 py-1 sm:ml-4 scroll-smooth">Music</a>
-                    <a href="#contact" class="block hover:bg-cool_gray-500 text-cool_cyan-300 rounded px-2 py-1 sm:ml-4 scroll-smooth">Contact</a>
+                <div id="logo-div" class="flex cursor-pointer pl-2 self-center text-2xl">
+                    <p class="self-start" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(180deg) translateY(-0.47rem)" stroke="#000" xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" id="svg_g" stroke-width="0" fill="#84D3DB">ɓ</p>
+                    <p>narɓear</p>
+                    <!-- style="transform: rotate(180deg) translateY(3px)" -->
                 </div>
-                <div id="menu" class="bg-cool_gray-300 sm:flex float-end justify-end hidden pt-1">
-                    <a href="#about" class="hover:bg-cool_gray-500 text-cool_cyan-300 rounded px-2 py-1 sm:ml-4">About Me</a>
-                    <a href="#music" class="hover:bg-cool_gray-500 text-cool_cyan-300 rounded px-2 py-1 sm:ml-4">Music</a>
-                    <a href="#contact" class="hover:bg-cool_gray-500 text-cool_cyan-300 rounded px-2 py-1 sm:ml-4">Contact</a>
+                <!-- </a> -->
+                <div class="flex justify-end">
+                    <div id="scroll-progress" class="bg-cool_cyan-300 h-0.5 fixed top-0 left-0 z-50"></div>
+                    <div id="mobileMenu" class="bg-cool_gray-500 fixed w-full px-1 pt-1 pb-3 sm:p-0 top-[-120px] duration-300 -z-10 sm:hidden">
+                        <a href="#about" class="block hover:bg-cool_gray-300 text-cool_cyan-300 rounded px-2 py-1 sm:ml-4 scroll-smooth">About Me</a>
+                        <a href="#music" class="block hover:bg-cool_gray-300 text-cool_cyan-300 rounded px-2 py-1 sm:ml-4 scroll-smooth">Music</a>
+                        <a href="#contact" class="block hover:bg-cool_gray-300 text-cool_cyan-300 rounded px-2 py-1 sm:ml-4 scroll-smooth">Contact</a>
+                    </div>
+                    <div id="menu" class="bg-cool_gray-500 sm:flex float-end justify-end hidden pt-1 mr-5">
+                        <a href="#about" class="hover:bg-cool_gray-300 text-cool_cyan-300 rounded px-2 py-1 sm:ml-4">About Me</a>
+                        <a href="#music" class="hover:bg-cool_gray-300 text-cool_cyan-300 rounded px-2 py-1 sm:ml-4">Music</a>
+                        <a href="#contact" class="hover:bg-cool_gray-300 text-cool_cyan-300 rounded px-2 py-1 sm:ml-4">Contact</a>
+                    </div>
+                    <button id="menuBurger" type="button" class="sm:hidden mt-2 px-3 focus:outline-none">
+                        <svg class="size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path id="menuBurgerOpen" stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            <path id="menuBurgerClose" hidden stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                    <button class="mt-1 px-1 focus:outline-none hover:bg-cool_gray-300 rounded">
+                        <svg id="moonIcon" class="size-5"xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                        </svg>
+                    </button>
                 </div>
             </nav>
         </div>
@@ -83,10 +88,10 @@
         <p class="py-4 px-20">
             <div class="text-center">
                 <p>Music links: </p>
-                <a class="hover:underline text-cool_cyan-500" href="https://open.spotify.com/artist/6kiwFKZNui7R49s1SueXlz" target="_blank">Spotify</a><span> - </span>
-                <a class="hover:underline text-cool_cyan-500" href="https://music.apple.com/us/album/lifebeat-single/1795019613" target="_blank">Apple Music</a><span> - </span>
-                <a class="hover:underline text-cool_cyan-500" href="https://soundcloud.com/gnarbear" target="_blank">Soundcloud</a><span> - </span>
-                <a class="hover:underline text-cool_cyan-500" href="https://www.deezer.com/us/album/709551271" target="_blank">Deezer</a>
+                <a id="link-text" class="text-cool_cyan-300 underline" href="https://open.spotify.com/artist/6kiwFKZNui7R49s1SueXlz" target="_blank">Spotify</a><span> - </span>
+                <a id="link-text" class="text-cool_cyan-300 underline" href="https://music.apple.com/us/album/lifebeat-single/1795019613" target="_blank">Apple Music</a><span> - </span>
+                <a id="link-text" class="text-cool_cyan-300 underline" href="https://soundcloud.com/gnarbear" target="_blank">Soundcloud</a><span> - </span>
+                <a id="link-text" class="text-cool_cyan-300 underline" href="https://www.deezer.com/us/album/709551271" target="_blank">Deezer</a>
             </div>
         </p>
         <div id="contact"></div>
@@ -96,8 +101,10 @@
             Contact
         </h1>
         <p class="py-4 px-20 text-center svg">
-            For booking requests, email me at <span class="text-cool_cyan-500">bookme@gnarbearmusic.com</span>
-            <img class="cursor-pointer inline" id="copy-el" src="./images/copyicon.png" alt="copy icon">
+            For booking requests, email me at <span id="link-text" class="text-cool_cyan-300">bookme@gnarbearmusic.com</span>
+            <!-- <img class="cursor-pointer inline stroke-width-4 stroke-black" id="copy-el" src="./images/copyicon.svg" alt="copy icon"> -->
+            <svg class="cursor-pointer inline" id="copy-el" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e2e8f0">
+                <path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"/></svg>
         </p>
     </body>
     <footer id="footer" class="text-center pt-20 text-xs cursors">

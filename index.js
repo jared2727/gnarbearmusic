@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         const progressBar = document.getElementById("scroll-progress");
         // Prevent division by zero if scrollableHeight is 0
         if (progressBar) { // Check if progressBar exists
-            const progress = scrollableHeight > 0 ? (scrolled / scrollableHeight) * 100 : 0;
+            const progress = scrollableHeight > 0 ? (scrolled / scrollableHeight) * 200 : 0;
             progressBar.style.width = progress + "%";
         }
     });
@@ -22,6 +22,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const moonIcon = document.querySelector("#moonIcon");
     const bodyElement = document.querySelector("body"); // Select body once
     const homeLogo = document.querySelector("#logo");
+    const copyIcon = document.querySelector("#copy-el");
+    const linkTextEl = document.querySelectorAll("#link-text");
 
     // --- Helper Functions ---
 
@@ -97,12 +99,22 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
             if (!isDarkMode) { // If currently light mode, switch to dark
                 moonIcon.setAttribute("fill", "currentColor");
-                bodyElement.classList.remove("bg-gray-100", "text-gray-900");
+                copyIcon.setAttribute("fill", "currentColor");
+                bodyElement.classList.remove("bg-gray-200", "text-gray-900");
                 bodyElement.classList.add("bg-cool_gray-500", "text-slate-200");
+                linkTextEl.forEach( (el) => {
+                    el.classList.add("text-cool_cyan-300");
+                    el.classList.remove("text-cool_cyan-900");
+                }) 
             } else { // If currently dark mode, switch to light
                 moonIcon.setAttribute("fill", "none");
+                copyIcon.setAttribute("fill", "text-cool_cyan-900");
                 bodyElement.classList.remove("bg-cool_gray-500", "text-slate-200");
-                bodyElement.classList.add("bg-gray-100", "text-gray-900");
+                bodyElement.classList.add("bg-gray-200", "text-gray-900");
+                linkTextEl.forEach( (el) => {
+                    el.classList.add("text-cool_cyan-900");
+                    el.classList.remove("text-cool_cyan-300");
+                }) 
             }
         });
     } else {
@@ -110,8 +122,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
     
     // Copy button
-    const copyEl = document.querySelector("#copy-el");
-    copyEl.addEventListener("click", function () {
+    copyIcon.addEventListener("click", function () {
         navigator.clipboard.writeText("bookme@gnarbearmusic.com");
     });
 });

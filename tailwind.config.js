@@ -10,6 +10,7 @@ module.exports = {
           100: '#aaffe3', // not shown right in some browsers 
           300: '#9ce5cc',  // ideal color
           500: '#7ec9b0', // darker variant
+          900: '#1b4036', // even darker variant
         },
         cool_gray: {
           100: '#7e7e7e', // lighter 

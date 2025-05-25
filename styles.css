@@ -102,3 +102,23 @@ body {
     justify-content: center;
     margin: 3%;
 }
+
+
+span, a {
+    text-shadow: 0 0 10px black;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' #7ec9b0,
+  'wght' 100,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+/* #logo-div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+} */
