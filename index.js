@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         const progressBar = document.getElementById("scroll-progress");
         // Prevent division by zero if scrollableHeight is 0
         if (progressBar) { // Check if progressBar exists
-            const progress = scrollableHeight > 0 ? (scrolled / scrollableHeight) * 200 : 0;
+            const progress = scrollableHeight > 0 ? (scrolled / scrollableHeight) * 100 : 0;
             progressBar.style.width = progress + "%";
         }
     });
