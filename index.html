@@ -13,44 +13,48 @@
    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=content_copy" />
 </head>
 <header>
-    <div class="w-full z-50 ">
-        <div class="flex justify-between bg-cool_gray-500">
-            <div id="mobileMenu" class="bg-cool_gray-500 flex flex-col items-start fixed w-full px-2 pt-4 pb-3 sm:p-0 top-[-120px] duration-300 -z-10 sm:hidden">
-                <a href="#about" class="block hover:bg-cool_gray-300 text-cool_cyan-300 rounded px-2 py-1 sm:ml-4 scroll-smooth">About Me</a>
-                <a href="#music" class="block hover:bg-cool_gray-300 text-cool_cyan-300 rounded px-2 py-1 sm:ml-4 scroll-smooth">Music</a>
-                <a href="#contact" class="block hover:bg-cool_gray-300 text-cool_cyan-300 rounded px-2 py-1 sm:ml-4 scroll-smooth">Contact</a>
+    <div class="w-full z-50">
+        <div class="fixed w-full bg-cool_gray-500 min-w-64">
+            <div id="mobileMenu" class="bg-cool_gray-500 flex flex-col items-start fixed w-full px-2 pt-6 pb-3 sm:p-0 top-[-120px] duration-300 -z-10 sm:hidden">
+                <a href="#about" class="block hover:bg-cool_gray-300 text-cool_cyan-300 rounded px-2 py-1 sm:ml-4 scroll-smooth w-full">About Me</a>
+                <a href="#music" class="block hover:bg-cool_gray-300 text-cool_cyan-300 rounded px-2 py-1 sm:ml-4 scroll-smooth w-full">Music</a>
+                <a href="#contact" class="block hover:bg-cool_gray-300 text-cool_cyan-300 rounded px-2 py-1 sm:ml-4 scroll-smooth w-full">Contact</a>
             </div>
-            <div class="flex items-center relative">
-                <div id="menu" class="bg-cool_gray-500 sm:flex hidden pt-1 mr-5">
-                    <a href="#about" class="hover:bg-cool_gray-300 text-cool_cyan-300 rounded px-2 py-2 sm:ml-4">About Me</a>
-                    <a href="#music" class="hover:bg-cool_gray-300 text-cool_cyan-300 rounded px-2 py-2 sm:ml-4">Music</a>
-                    <a href="#contact" class="hover:bg-cool_gray-300 text-cool_cyan-300 rounded px-2 py-2 sm:ml-4">Contact</a>
+            <div class="flex items-center justify-between">
+                <div class="flex">
+                    <div id="menu" class="bg-cool_gray-500 sm:flex hidden pt-1 mr-5">
+                        <a href="#about" class="hover:bg-cool_gray-300 text-cool_cyan-300 rounded px-2 py-2 sm:ml-4">About Me</a>
+                        <a href="#music" class="hover:bg-cool_gray-300 text-cool_cyan-300 rounded px-2 py-2 sm:ml-4">Music</a>
+                        <a href="#contact" class="hover:bg-cool_gray-300 text-cool_cyan-300 rounded px-2 py-2 sm:ml-4">Contact</a>
+                    </div>
+                    <button id="menuBurger" type="button" class="sm:hidden mt-2 px-3 focus:outline-none text-cool_cyan-300 ">
+                        <svg class="size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path id="menuBurgerOpen" stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            <path id="menuBurgerClose" hidden stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                    <button id="moonIcon" class="mt-1.5 py-2 px-2 order-last focus:outline-none hover:bg-cool_gray-300 rounded">
+                        <svg  class="size-5 text-cool_cyan-300"xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                        </svg>
+                    </button>
                 </div>
-                <button id="menuBurger" type="button" class="sm:hidden mt-2 px-3 focus:outline-none text-cool_cyan-300">
-                    <svg class="size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path id="menuBurgerOpen" stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                        <path id="menuBurgerClose" hidden stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                    </svg>
-                </button>
-                <button id="moonIcon" class="mt-1.5 py-2 px-2 order-last f focus:outline-none hover:bg-cool_gray-300 rounded">
-                    <svg  class="size-5 text-cool_cyan-300"xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
-                    </svg>
-                </button>
+                <div class="text-cool_cyan-300 order-first bg-cool_gray-500 py-1 pb-3 pt-4">
+                    <a href="#">
+                        <img id="logo-div" class="h-10 inline px-3 cursor-pointer" src="./images/logo-1.png" alt="gnarbear logo">
+                    </a>
+                    <!-- <a id="logo-div" class="flex cursor-pointer pl-2 py-2 self-center text-2xl" href="#">
+                        <p class="self-start sm:hidden block" href="#" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(180deg) translateY(-0.17rem);" font-family="Noto Sans JP" id="svg_g_mobile" stroke-width="0" fill="#84D3DB">ɓ</p>
+                        <p class="self-start hidden sm:block" href="#" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(180deg) translateY(-0.47rem);" font-family="Noto Sans JP" id="svg_g_dt" stroke-width="0" fill="#84D3DB">ɓ</p>
+                        <p>narɓear</p>
+                    </a> -->
+                </div>        
             </div>
-        <div class="text-cool_cyan-300 order-first bg-cool_gray-500 py-1 pb-3 pt-4">
-            <img id="logo" class="h-10 inline px-3" src="./images/logo-1.png" href="#" alt="gnarbear logo">
-            <!-- <a id="logo-div" class="flex cursor-pointer pl-2 py-2 self-center text-2xl" href="#">
-                <p class="self-start sm:hidden block" href="#" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(180deg) translateY(-0.17rem);" font-family="Noto Sans JP" id="svg_g_mobile" stroke-width="0" fill="#84D3DB">ɓ</p>
-                <p class="self-start hidden sm:block" href="#" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(180deg) translateY(-0.47rem);" font-family="Noto Sans JP" id="svg_g_dt" stroke-width="0" fill="#84D3DB">ɓ</p>
-                <p>narɓear</p>
-            </a> -->
-        </div>        
-    <div id="scroll-progress" class="bg-cool_cyan-300 h-0.5 fixed top-0 left-0 z-50"></div>
+            <div id="scroll-progress" class="bg-cool_cyan-300 h-0.5 fixed top-0 left-0 z-50"></div>
         </div>
     </div>
     </header>
-    <body class="bg-cool_gray-500 text-slate-200 w-100 mb-5">
+    <body class="bg-cool_gray-500 text-slate-200 mb-5 min-w-64">
         <div class="pt-20 mx-10">
             <img class="rounded-2xl shadow-md m-10 mx-auto" src="./images/DJgnarbear10.png" alt="gnarbear DJing in Mallorca on stage in front of a dancing crowd">
         </div>
